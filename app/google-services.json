@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "790877755596",
+    "project_id": "fir-millonario-f8428",
+    "storage_bucket": "fir-millonario-f8428.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790877755596:android:19cc67e53c4682838b4a69",
+        "android_client_info": {
+          "package_name": "com.example.juegomillonario"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC79hiJIem6F5sIQUiMmALbaTiEoF9WB1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
