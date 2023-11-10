@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:text="Haz ganado: $ 0 COP"
         android:textColor="@color/white"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -34,58 +35,58 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="331dp"
-        android:layout_height="210dp"
+        android:layout_width="339dp"
+        android:layout_height="365dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textGanado"
-        app:layout_constraintVertical_bias="0.065">
+        app:layout_constraintVertical_bias="0.374">
 
         <TextView
             android:id="@+id/textPregunta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
             android:text="TextView"
-            android:textSize="18dp" />
+            android:textColor="@color/white"
+            android:textSize="28dp" />
 
         <TextView
             android:id="@+id/textOpcionA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:textColor="@color/white"
             android:text="TextView"
-            android:textSize="15dp"/>
+            android:textColor="@color/white"
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/textOpcionB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:textColor="@color/white"
             android:text="TextView"
-            android:textSize="15dp" />
+            android:textColor="@color/white"
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/textOpcionC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:textColor="@color/white"
             android:text="TextView"
-            android:textSize="15dp" />
+            android:textColor="@color/white"
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/textOpcionD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:textColor="@color/white"
             android:text="TextView"
-            android:textSize="15dp" />
+            android:textColor="@color/white"
+            android:textSize="25dp" />
 
     </LinearLayout>
 

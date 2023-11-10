@@ -33,7 +33,7 @@ class MainActivity5 : AppCompatActivity() {
         fireDatabase = FirebaseDatabase.getInstance()
         preguntaRef = fireDatabase.getReference("datos")
         var intentos=3
-        var dinero = 12500
+        var dinero = 0
         var aciertos=0
         preguntaRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -51,9 +51,11 @@ class MainActivity5 : AppCompatActivity() {
                     textOpcionD.text = Coleccion[count].d
                     textOpcionA.setOnClickListener {
                         if (Coleccion[count].a==Coleccion[count].respuesta){
+                            dinero = 12500
                             dinero+=dinero
                             aciertos++
                             textGanado.text="Haz ganado: $ $dinero COP"
+                            Toast.makeText(this@MainActivity5, "Acertaste la pregunta", Toast.LENGTH_SHORT).show()
                             textOpcionA.animate().setStartDelay(1000).setDuration(3000).withEndAction {
                                 count = Random.nextInt(0,Coleccion.size)
                                 textPregunta.text =Coleccion[count].pregunta
@@ -101,24 +103,22 @@ class MainActivity5 : AppCompatActivity() {
                         }else{
                             intentos--
                             if (intentos==0){
-                                if(aciertos==0){
-                                    dinero=0
-                                }
                                 AlertDialog.Builder(binding.root.context)
                                     .setMessage("Felicidades has ganado $ $dinero COP Preguntas acertadas: ${aciertos}")
                                     .setPositiveButton("Ok") { view, b ->
                                         startActivity(Intent(this@MainActivity5,MainActivity2::class.java))
                                     }.create().show()
-                            }else{
-                                textOpcionA.animate().setStartDelay(1000).setDuration(3000).withEndAction {
+                            }
+                            Toast.makeText(this@MainActivity5, "Perdiste te quedan $intentos intentos", Toast.LENGTH_SHORT).show()
+                            textOpcionA.animate().setStartDelay(1000).setDuration(3000).withEndAction {
                                     count = Random.nextInt(0,Coleccion.size)
                                     textPregunta.text =Coleccion[count].pregunta
                                     textOpcionA.text = Coleccion[count].a
                                     textOpcionB.text = Coleccion[count].b
                                     textOpcionC.text = Coleccion[count].c
                                     textOpcionD.text = Coleccion[count].d
-                                }.start()
-                            }
+                            }.start()
+
                         }
                     }
                     textOpcionC.setOnClickListener {
