@@ -45,10 +45,10 @@ class MainActivity5 : AppCompatActivity() {
                 var count = Random.nextInt(0,Coleccion.size)
                 binding.apply {
                     textPregunta.text =Coleccion[count].pregunta
-                    textOpcionA.text = Coleccion[count].a
-                    textOpcionB.text = Coleccion[count].b
-                    textOpcionC.text = Coleccion[count].c
-                    textOpcionD.text = Coleccion[count].d
+                    textOpcionA.text = "A. ${Coleccion[count].a}"
+                    textOpcionB.text = "B. ${Coleccion[count].b}"
+                    textOpcionC.text = "C. ${Coleccion[count].c}"
+                    textOpcionD.text = "D. ${Coleccion[count].d}"
                     textOpcionA.setOnClickListener {
                         if (Coleccion[count].a==Coleccion[count].respuesta){
                             var dineros=12500
@@ -58,10 +58,10 @@ class MainActivity5 : AppCompatActivity() {
                             textOpcionA.animate().setStartDelay(1000).setDuration(1000).withEndAction {
                                 count = Random.nextInt(0,Coleccion.size)
                                 textPregunta.text =Coleccion[count].pregunta
-                                textOpcionA.text = Coleccion[count].a
-                                textOpcionB.text = Coleccion[count].b
-                                textOpcionC.text = Coleccion[count].c
-                                textOpcionD.text = Coleccion[count].d
+                                textOpcionA.text = "A. ${Coleccion[count].a}"
+                                textOpcionB.text = "B. ${Coleccion[count].b}"
+                                textOpcionC.text = "C. ${Coleccion[count].c}"
+                                textOpcionD.text = "D. ${Coleccion[count].d}"
                             }.start()
                         }else{
                             intentos--
@@ -76,10 +76,10 @@ class MainActivity5 : AppCompatActivity() {
                             textOpcionA.animate().setStartDelay(1000).setDuration(1000).withEndAction {
                                 count = Random.nextInt(0,Coleccion.size)
                                 textPregunta.text =Coleccion[count].pregunta
-                                textOpcionA.text = Coleccion[count].a
-                                textOpcionB.text = Coleccion[count].b
-                                textOpcionC.text = Coleccion[count].c
-                                textOpcionD.text = Coleccion[count].d
+                                textOpcionA.text = "A. ${Coleccion[count].a}"
+                                textOpcionB.text = "B. ${Coleccion[count].b}"
+                                textOpcionC.text = "C. ${Coleccion[count].c}"
+                                textOpcionD.text = "D. ${Coleccion[count].d}"
                             }.start()
 
                         }
@@ -93,10 +93,10 @@ class MainActivity5 : AppCompatActivity() {
                             textOpcionA.animate().setStartDelay(1000).setDuration(1000).withEndAction {
                                 count = Random.nextInt(0,Coleccion.size)
                                 textPregunta.text =Coleccion[count].pregunta
-                                textOpcionA.text = Coleccion[count].a
-                                textOpcionB.text = Coleccion[count].b
-                                textOpcionC.text = Coleccion[count].c
-                                textOpcionD.text = Coleccion[count].d
+                                textOpcionA.text = "A. ${Coleccion[count].a}"
+                                textOpcionB.text = "B. ${Coleccion[count].b}"
+                                textOpcionC.text = "C. ${Coleccion[count].c}"
+                                textOpcionD.text = "D. ${Coleccion[count].d}"
                             }.start()
                         }else{
                             intentos--
@@ -111,10 +111,10 @@ class MainActivity5 : AppCompatActivity() {
                             textOpcionA.animate().setStartDelay(1000).setDuration(1000).withEndAction {
                                     count = Random.nextInt(0,Coleccion.size)
                                     textPregunta.text =Coleccion[count].pregunta
-                                    textOpcionA.text = Coleccion[count].a
-                                    textOpcionB.text = Coleccion[count].b
-                                    textOpcionC.text = Coleccion[count].c
-                                    textOpcionD.text = Coleccion[count].d
+                                    textOpcionA.text = "A. ${Coleccion[count].a}"
+                                    textOpcionB.text = "B. ${Coleccion[count].b}"
+                                    textOpcionC.text = "C. ${Coleccion[count].c}"
+                                    textOpcionD.text = "D. ${Coleccion[count].d}"
                             }.start()
 
                         }
@@ -128,10 +128,10 @@ class MainActivity5 : AppCompatActivity() {
                             textOpcionA.animate().setStartDelay(1000).setDuration(1000).withEndAction {
                                 count = Random.nextInt(0,Coleccion.size)
                                 textPregunta.text =Coleccion[count].pregunta
-                                textOpcionA.text = Coleccion[count].a
-                                textOpcionB.text = Coleccion[count].b
-                                textOpcionC.text = Coleccion[count].c
-                                textOpcionD.text = Coleccion[count].d
+                                textOpcionA.text = "A. ${Coleccion[count].a}"
+                                textOpcionB.text = "B. ${Coleccion[count].b}"
+                                textOpcionC.text = "C. ${Coleccion[count].c}"
+                                textOpcionD.text = "D. ${Coleccion[count].d}"
                             }.start()
                         }else{
                             intentos--
@@ -146,10 +146,10 @@ class MainActivity5 : AppCompatActivity() {
                             textOpcionA.animate().setStartDelay(1000).setDuration(1000).withEndAction {
                                 count = Random.nextInt(0,Coleccion.size)
                                 textPregunta.text =Coleccion[count].pregunta
-                                textOpcionA.text = Coleccion[count].a
-                                textOpcionB.text = Coleccion[count].b
-                                textOpcionC.text = Coleccion[count].c
-                                textOpcionD.text = Coleccion[count].d
+                                textOpcionA.text = "A. ${Coleccion[count].a}"
+                                textOpcionB.text = "B. ${Coleccion[count].b}"
+                                textOpcionC.text = "C. ${Coleccion[count].c}"
+                                textOpcionD.text = "D. ${Coleccion[count].d}"
                             }.start()
 
                         }
@@ -163,10 +163,10 @@ class MainActivity5 : AppCompatActivity() {
                             textOpcionA.animate().setStartDelay(1000).setDuration(1000).withEndAction {
                                 count = Random.nextInt(0,Coleccion.size)
                                 textPregunta.text =Coleccion[count].pregunta
-                                textOpcionA.text = Coleccion[count].a
-                                textOpcionB.text = Coleccion[count].b
-                                textOpcionC.text = Coleccion[count].c
-                                textOpcionD.text = Coleccion[count].d
+                                textOpcionA.text = "A. ${Coleccion[count].a}"
+                                textOpcionB.text = "B. ${Coleccion[count].b}"
+                                textOpcionC.text = "C. ${Coleccion[count].c}"
+                                textOpcionD.text = "D. ${Coleccion[count].d}"
                             }.start()
                         }else{
                             intentos--
@@ -181,10 +181,10 @@ class MainActivity5 : AppCompatActivity() {
                             textOpcionA.animate().setStartDelay(1000).setDuration(1000).withEndAction {
                                 count = Random.nextInt(0,Coleccion.size)
                                 textPregunta.text =Coleccion[count].pregunta
-                                textOpcionA.text = Coleccion[count].a
-                                textOpcionB.text = Coleccion[count].b
-                                textOpcionC.text = Coleccion[count].c
-                                textOpcionD.text = Coleccion[count].d
+                                textOpcionA.text = "A. ${Coleccion[count].a}"
+                                textOpcionB.text = "B. ${Coleccion[count].b}"
+                                textOpcionC.text = "C. ${Coleccion[count].c}"
+                                textOpcionD.text = "D. ${Coleccion[count].d}"
                             }.start()
 
                         }
